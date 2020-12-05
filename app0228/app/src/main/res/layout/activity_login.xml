@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+        <EditText
+            android:id="@+id/user_input"
+
+            android:layout_marginTop="60dp"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:hint="Pls Input Name"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            />
+
+       <ImageView
+           android:id="@+id/logImg"
+           android:layout_width="300dp"
+           android:layout_height="300dp"
+           android:layout_marginTop="20dp"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@id/user_input"
+           >
+        </ImageView>
+
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+
+
+
+            <RadioButton
+                android:id="@+id/fromCamaro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+
+                android:width="140dp"
+                android:text="From Camaro"
+                />
+            <RadioButton
+                android:id="@+id/fromPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:width="140dp"
+                android:layout_marginLeft="20dp"
+                android:text="From Photo"
+                />
+
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_importImg"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Photo"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/RadioGroup"/>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_importImg"/>
+
+</RelativeLayout>

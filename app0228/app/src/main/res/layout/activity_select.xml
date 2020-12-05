@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectActivity">
+
+    <TextView
+        android:id="@+id/txt_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:maxLines = "5"
+        android:text="你很忧虑， 摇动手机， 可以看看附近是否有和你一样忧虑的人，点击 Yes , 将显示一些人员信息 ， 点击 No , 将返回主界面"
+        android:background="#5796A8">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/Btn_SelectRock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yes , Rock "
+        android:layout_marginTop="30dp"
+        android:background="@null"
+        android:layout_below="@id/txt_selection"></Button>
+
+<Button
+    android:id="@+id/Btn_SelectNoRock"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="No , I will return "
+    android:layout_marginTop="30dp"
+    android:background="@null"
+    android:layout_below="@id/Btn_SelectRock"
+    />
+
+</RelativeLayout>
